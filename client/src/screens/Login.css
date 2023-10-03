@@ -1,0 +1,44 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .login-card {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hover effect for input fields */
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Hover effect for the login button */
+  }
+  
+  .register-link span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
