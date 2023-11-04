@@ -8,6 +8,15 @@ function Room({ room, fromdate, todate }) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const showAlert = (message) => {
+    window.alert(message);
+  };
+
+  const bookh = (e) => {
+      e.preventDefault();
+      showAlert("Start date and end Date should be selected");   
+  }
   return (
     <div className="row m-3 p-3 bs">
       <div className="col-md-4">
@@ -30,7 +39,7 @@ function Room({ room, fromdate, todate }) {
         <div style={{ float: "right" }}>
           
            <Link to={`/book/${room._id}/${fromdate}/${todate}`}>
-            <button className="btn btn-dark m-2">Book Now</button>
+            <button className="btn btn-dark m-2" onClick={(e) => bookh(e)}>Book Now</button>
           </Link>
 
           <button className="btn btn-danger m-2"  onClick={handleShow}>
